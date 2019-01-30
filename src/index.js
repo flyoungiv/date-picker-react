@@ -10,7 +10,11 @@ import './date-picker-css-overrides.css';
 // pickerButton.id = 'date-picker';
 // document.body.appendChild(pickerButton);
 
-ReactDOM.render(<DatePicker />, document.getElementById('root'));
+const localPlayer = {
+    color: "red"
+}
+
+ReactDOM.render(<DatePicker localPlayer={localPlayer}/>, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
